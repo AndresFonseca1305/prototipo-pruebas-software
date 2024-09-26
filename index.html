@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Empleados</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Registro de Empleados</h1>
+        <form id="employeeForm">
+            <div class="form-group">
+                <label for="employeeCode">Código del empleado:</label>
+                <input type="number" id="employeeCode" name="employeeCode" placeholder="123" required>
+            </div>
+            <div class="form-group">
+                <label for="employeeName">Nombre del empleado:</label>
+                <input type="text" id="employeeName" name="employeeName" maxlength="30" placeholder="Nombre completo" required>
+            </div>
+            <div class="form-group">
+                <label for="employeeType">Tipo de empleado:</label>
+                <select id="employeeType" name="employeeType" required>
+                    <option value="1">Planta</option>
+                    <option value="0">Término fijo</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="employeeTime">Tiempo en la institución (meses):</label>
+                <input type="number" id="employeeTime" name="employeeTime" placeholder="Meses en la institución" required>
+            </div>
+            <button type="submit">Registrar</button>
+        </form>
+        <p id="result"></p>
+    </div>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
